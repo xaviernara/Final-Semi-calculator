@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xarichar.calc2.MainActivity">
+
+        <EditText
+            android:id="@+id/operand1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="1dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="operand 1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/operand2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="operand 2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/operand1_text" />
+
+        <Button
+            android:id="@+id/addbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            app:layout_constraintBaseline_toBaselineOf="@+id/subtractbutton"
+            app:layout_constraintEnd_toEndOf="@+id/powerbutton"
+            app:layout_constraintStart_toStartOf="@+id/powerbutton" />
+
+        <Button
+            android:id="@+id/subtractbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="60dp"
+            android:text="subtract"
+            app:layout_constraintEnd_toStartOf="@+id/dividebutton"
+            app:layout_constraintTop_toBottomOf="@+id/operand2_text" />
+
+        <Button
+            android:id="@+id/dividebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:text="divide"
+            app:layout_constraintBaseline_toBaselineOf="@+id/subtractbutton"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/powerbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="power"
+            app:layout_constraintBaseline_toBaselineOf="@+id/sqrtbutton"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/sqrtbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="43dp"
+            android:text="sqrt"
+            app:layout_constraintEnd_toStartOf="@+id/multiplybutton"
+            app:layout_constraintTop_toBottomOf="@+id/subtractbutton" />
+
+        <Button
+            android:id="@+id/multiplybutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:text="multiply"
+            app:layout_constraintBaseline_toBaselineOf="@+id/sqrtbutton"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/clearbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:text="clear"
+            app:layout_constraintBaseline_toBaselineOf="@+id/resulttext"
+            app:layout_constraintStart_toEndOf="@+id/resulttext" />
+
+        <EditText
+            android:id="@+id/resulttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="75dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="76dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Result"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/powerbutton" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
